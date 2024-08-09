@@ -1,0 +1,118 @@
+{
+  "ami" = "ami-0b4f379183e5706b9"
+  "arn" = "arn:aws:ec2:us-east-1:773757155758:instance/i-092de6b68130885c2"
+  "associate_public_ip_address" = false
+  "availability_zone" = "us-east-1a"
+  "capacity_reservation_specification" = tolist([
+    {
+      "capacity_reservation_preference" = "open"
+      "capacity_reservation_target" = tolist([])
+    },
+  ])
+  "cpu_core_count" = 1
+  "cpu_options" = tolist([
+    {
+      "amd_sev_snp" = ""
+      "core_count" = 1
+      "threads_per_core" = 1
+    },
+  ])
+  "cpu_threads_per_core" = 1
+  "credit_specification" = tolist([
+    {
+      "cpu_credits" = "standard"
+    },
+  ])
+  "disable_api_stop" = false
+  "disable_api_termination" = false
+  "ebs_block_device" = toset([])
+  "ebs_optimized" = false
+  "enclave_options" = tolist([
+    {
+      "enabled" = false
+    },
+  ])
+  "ephemeral_block_device" = toset([])
+  "get_password_data" = false
+  "hibernation" = false
+  "host_id" = ""
+  "host_resource_group_arn" = tostring(null)
+  "iam_instance_profile" = ""
+  "id" = "i-092de6b68130885c2"
+  "instance_initiated_shutdown_behavior" = "stop"
+  "instance_lifecycle" = ""
+  "instance_market_options" = tolist([])
+  "instance_state" = "running"
+  "instance_type" = "t2.micro"
+  "ipv6_address_count" = 0
+  "ipv6_addresses" = tolist([])
+  "key_name" = ""
+  "launch_template" = tolist([])
+  "maintenance_options" = tolist([
+    {
+      "auto_recovery" = "default"
+    },
+  ])
+  "metadata_options" = tolist([
+    {
+      "http_endpoint" = "enabled"
+      "http_protocol_ipv6" = "disabled"
+      "http_put_response_hop_limit" = 1
+      "http_tokens" = "optional"
+      "instance_metadata_tags" = "disabled"
+    },
+  ])
+  "monitoring" = false
+  "network_interface" = toset([])
+  "outpost_arn" = ""
+  "password_data" = ""
+  "placement_group" = ""
+  "placement_partition_number" = 0
+  "primary_network_interface_id" = "eni-037a4349c16f7783b"
+  "private_dns" = "ip-10-0-0-97.ec2.internal"
+  "private_dns_name_options" = tolist([
+    {
+      "enable_resource_name_dns_a_record" = false
+      "enable_resource_name_dns_aaaa_record" = false
+      "hostname_type" = "ip-name"
+    },
+  ])
+  "private_ip" = "10.0.0.97"
+  "public_dns" = ""
+  "public_ip" = ""
+  "root_block_device" = tolist([
+    {
+      "delete_on_termination" = true
+      "device_name" = "/dev/sda1"
+      "encrypted" = false
+      "iops" = 100
+      "kms_key_id" = ""
+      "tags" = tomap({})
+      "tags_all" = tomap({})
+      "throughput" = 0
+      "volume_id" = "vol-02052a02a69ccb41b"
+      "volume_size" = 10
+      "volume_type" = "gp2"
+    },
+  ])
+  "secondary_private_ips" = toset([])
+  "security_groups" = toset([])
+  "source_dest_check" = true
+  "spot_instance_request_id" = ""
+  "subnet_id" = "subnet-0ac3df5627209a411"
+  "tags" = tomap({
+    "Name" = "mongodb"
+  })
+  "tags_all" = tomap({
+    "Name" = "mongodb"
+  })
+  "tenancy" = "default"
+  "timeouts" = null /* object */
+  "user_data" = tostring(null)
+  "user_data_base64" = tostring(null)
+  "user_data_replace_on_change" = false
+  "volume_tags" = tomap(null) /* of string */
+  "vpc_security_group_ids" = toset([
+    "sg-0db659996615c588e",
+  ])
+}
